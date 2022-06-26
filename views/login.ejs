@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<div id="contact">
+  <h3>Login
+    <hr>
+  </h3>
+  <p>Use the test key - Simer:Lol for free limited access.</p>
+  <div class="form">
+    <form method="post" action="/login" class="formula">
+      <p><textarea class="w3-input w3-padding-16" type="text" id='username' placeholder="Username" cols="47" rows="1"
+          required name="username"></textarea></p>
+      <p><input class="w3-input w3-padding-16" type="password" id='password'
+          placeholder="Password" required name="password">
+      </p>
+      <p><% if (messages.error) { %>
+  <%= messages.error %>
+<% } %></p>
+      <p><input class="w3-button w3-light-grey w3-padding-large submit" type="submit" value="SMASH!"></input>
+      </p>
+    </form>
+  </div>
+
+</html>
